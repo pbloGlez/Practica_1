@@ -46,8 +46,6 @@ function comprobarSanaYCurada(tripulacion: Tripulante[]): boolean {
 function encontrarSiguienteInfectado(tripulacion: Tripulante[]): Tripulante | undefined {
     return tripulacion.find((tripulante) => tripulante.estaInfectado);
 }
-
-// Uso de las funciones
 console.log("¿Hay personas infectadas? ", comprobarInfeccion(tripulacion));
 console.log("¿Todos sanos? ", comprobarSanaYCurada(tripulacion));
 
