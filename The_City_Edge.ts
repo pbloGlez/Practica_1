@@ -16,7 +16,6 @@ Habiendo obtenido las posibles fechas, Spock tendrá que transformarlas en una s
 (Map)
  */
 const fechasTransformadas: Date[] = fechasFiltradas.map(fecha => {
-    // Suponiendo que el mes, día, hora, minuto y segundo son arbitrarios para el ejemplo
     const ano: number = parseInt(fecha);
     return new Date(ano, 0, 1, 12, 0, 0);
 });
